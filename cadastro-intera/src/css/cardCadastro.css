@@ -1,0 +1,56 @@
+.cardCadastro{
+    background-color: #3b2d7d3f;
+  padding: 30px;
+  border-radius: 20px;
+
+  /* blur (efeito vidro) */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+
+  /* sombra */
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.071);
+
+  /* opcional: borda suave pra dar glow */
+  border: 1px solid rgba(255, 255, 255, 0);
+
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-right: 50px;
+  padding-left: 50px;
+}
+
+.cadastroInputs{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.divInput{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.styleInput{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+.icon{
+    position: absolute;
+    left: 65px;
+    color: rgba(255, 255, 255, 0.674);
+}
+
+:root{
+    --roxEscuro: #140C21; /* Usado para cor de fundo do cadastro */
+    --lilas: #4E417D; /*Cor do card do cadastro*/
+    --roxoInput: #9173FF; /*Cor da borda da input ao ser selecionada*/
+    --lilasInput: #4229A0; /*Cor da borda da input sem a seleção*/
+    --textoLabel: #E8E8E8; /*cor do texto da label*/
+}

@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+body{
+    min-height: 100vh;
+    width: 100vw;
+    background:
+        radial-gradient(circle at 80% -5%, #332578cd, transparent 40%),
+        radial-gradient(circle at 1% 80%, #332578c7, transparent 40%),
+        linear-gradient(135deg, #0b0620, #190a2c, #0c061b);
+  
+}
+
+h1{
+    color: white;
+    font-weight: 400;
+    font-size: 2.8rem;
+}
+
+h2{
+    color: white;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+section{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.sectionIntro{
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 100px;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+img{
+    width: 15rem;
+    padding-bottom: 40px;
+    padding-left: 20px;
+}
+
+p{
+    color: white;
+    padding-top: 20px;
+    font-size: 20px;
+    text-align: center;
+    width: 500px;
+}
+
+.digitar{
+    color: white;
+   width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 4px solid;
+
+  animation: typingCycle 30s steps(20) infinite, blink 0.5s infinite;
+}
+
+@keyframes typingCycle {
+  0% {
+    width: 0;
+    opacity: 1;
+  }
+
+  5% {
+    width: 400px; /* terminou de digitar rápido */
+    opacity: 1;
+  }
+
+  90% {
+    width: 410px; /* fica visível por ~1 minuto */
+    opacity: 1;
+  }
+
+  92% {
+    opacity: 0; /* some */
+  }
+
+  100% {
+    width: 0;
+    opacity: 0; /* espera um pouco antes de voltar */
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+:root{
+    --roxEscuro: #140C21; /* Usado para cor de fundo do cadastro */
+    --lilas: #4E417D; /*Cor do card do cadastro*/
+    --roxoInput: #9173FF ;/*Cor da borda da input ao ser selecionada*/
+    --lilasInput: #4229A0 ;/*Cor da borda da input sem a seleção*/
+    --textoLabel: #E8E8E8 ;/*cor do texto da label*/
+}

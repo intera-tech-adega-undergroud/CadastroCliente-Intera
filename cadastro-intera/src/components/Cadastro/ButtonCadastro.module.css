@@ -1,0 +1,21 @@
+.button{
+    background-color: rgb(254, 254, 254);
+    width: 25rem;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.button:hover{
+        background-color: rgb(126, 20, 255);
+        color: white;
+        cursor: pointer;
+        transition: 0.2s;
+}
+
+.botao{
+    padding-top: 15px;
+}
+

@@ -1,0 +1,49 @@
+:root {
+  --roxEscuro: #140C21;
+  --lilas: #4E417D;
+  --roxoInput: #9173FF;
+  --lilasInput: #7b69b9;
+  --textoLabel: #E8E8E8;
+  --inputBg: #2f255472;
+}
+
+/* INPUT BASE */
+.input {
+  background-color: #33257800;
+  color: white;
+  width: 25rem;
+  height: 2.5rem;
+  border: 2px solid  rgba(163, 145, 227, 0.437) ;
+  border-radius: 5px;
+  padding: 0 45px;
+  outline: none;
+  transition: 0.3s ease;
+}
+
+.input:hover{
+    background-color: #19023e;
+    cursor: pointer;
+}
+
+/* PLACEHOLDER */
+.input::placeholder {
+  color: rgba(255, 255, 255, 0.984);
+}
+
+.input:focus::placeholder {
+  color: rgba(255, 255, 255, 0.493);
+    transition: 0.3s ease;
+
+}
+
+/* FOCUS */
+.input:focus {
+  border: 1.5px solid var(--roxoInput);
+  box-shadow: 0 0 10px rgba(139, 92, 246, 0.6);
+  background-color: rgba(22, 6, 61, 0.448) ;
+}
+
+
+
+
+/* LABEL */
